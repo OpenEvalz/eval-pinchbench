@@ -1,0 +1,16 @@
+[project]
+name = "openevalz-eval-pinchbench"
+version = "0.1.0"
+description = "OpenEvalz packaging of PinchBench: Skill Composition for Coding Agents"
+license = { text = "BUSL-1.1" }
+requires-python = ">=3.10"
+dependencies = [
+  "inspect-ai==0.3.260",
+  "trusted-router>=0.7.0",
+  "pyyaml>=6",
+]
+
+[tool.openevalz]
+eval = "pinchbench"
+execution_class = "sandbox-local"
+cost_class = "high"

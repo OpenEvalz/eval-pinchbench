@@ -1,0 +1,41 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "pinchbench",
+    "slug": "pinchbench",
+    "title": "PinchBench: Skill Composition for Coding Agents",
+    "group": "",
+    "tags": [],
+    "source": "register"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "register/pinchbench",
+    "inspect_ai": "0.3.260",
+    "eval_version": "",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "sandbox-local",
+    "cost_class": "high",
+    "sandbox": [
+      "docker"
+    ],
+    "requires_internet": true,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "pinchbench",
+      "samples": 53
+    }
+  ],
+  "total_samples": 53,
+  "external_assets": [],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
